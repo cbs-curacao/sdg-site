@@ -859,15 +859,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-2-1",
-          "title": "Annual growth rate of real GDP per employed person",
+          "title": "Annual growth rate of nominal GDP per employed person",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
