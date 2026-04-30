@@ -99,7 +99,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/1-a-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-b-1",
@@ -251,7 +251,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-1-2",
@@ -259,7 +259,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-2-1",
@@ -287,11 +287,11 @@
         },
         {
           "id": "3-3-2",
-          "title": "Tuberculosis incidence per 100,000 population",
+          "title": "Tuberculosis incidence per 1,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-3-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-3",
@@ -343,11 +343,11 @@
         },
         {
           "id": "3-5-2",
-          "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+          "title": "Percentage of adults who are heavy drinkers (drinks 6 or more (men) or 4 or more (women) alcoholic consumptions during one occasion per week).",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-5-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -415,11 +415,11 @@
         },
         {
           "id": "3-a-1",
-          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
+          "title": "Age-standardized prevalence of current tobacco use among persons aged 18 years and older",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-a-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-1",
