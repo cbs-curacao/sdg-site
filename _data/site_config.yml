@@ -187,6 +187,14 @@ metadata_tabs:
   - scope: sources
     title: indicator.sources
     description: ''
+  - scope: policies
+    title: Policies
+    description: Policy context, national strategies, legislation, and relevant programmes related to this indicator
+    placeholder: No policy information is available for this indicator
+  - scope: publications
+    title: Publications
+    description: Related reports, strategies, policy documents, and other references
+    placeholder: No publications are available for this indicator
 meta_tags: []
 news:
   category_links: false
