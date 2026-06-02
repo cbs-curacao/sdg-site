@@ -178,6 +178,8 @@ menu:
   - path: /reporting-status
     translation_key: menu.reporting_status
     dropdown: []
+  - path: policies/goal-8/
+    translation_key: Policies — Goal 8
   - path: /news
     translation_key: menu.updates
     dropdown: []
