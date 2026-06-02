@@ -20,18 +20,18 @@ Target 8.10 of the 2030 Agenda commits member states to *"strengthen the capacit
 
 Indicator 8.10.2 measures the proportion of the adult population aged 15 and older who hold an account at a bank or another regulated financial institution, or who have personally used a mobile-money-service provider in the previous twelve months. The custodian agency is the World Bank, which compiles the global series from the Global Findex Database.
 
-**[→ View the indicator data and chart](/8-10-2/)**
+**[→ View the indicator data and chart]({{ '/8-10-2/' | relative_url }})**
 
 ## Policy and legislation
 
 The following national documents set the framework within which financial inclusion is regulated and measured in Curaçao. Each link opens a PDF in a new tab.
 
-- **[National Strategy for Financial Inclusion in Curaçao, 2024–2028](/assets/pdfs/policies/goal-8/cbcs-financial-inclusion-strategy-2024.pdf)** — joint document of the Ministry of Finance and the Central Bank of Curaçao and Sint Maarten setting out the four-pillar strategy (access, usage, quality, digital readiness) for the period 2024–2028.
-- **[Landsverordening Toezicht Bank- en Kredietwezen — plain-language summary](/assets/pdfs/policies/goal-8/landsverordening-banking-supervision-summary.pdf)** — English-language summary of the national ordinance governing the supervision of credit institutions, prepared for SDG-reporting purposes by the Central Bureau of Statistics.
+- **[National Strategy for Financial Inclusion in Curaçao, 2024–2028]({{ '/assets/pdfs/policies/goal-8/cbcs-financial-inclusion-strategy-2024.pdf' | relative_url }})** — joint document of the Ministry of Finance and the Central Bank of Curaçao and Sint Maarten setting out the four-pillar strategy (access, usage, quality, digital readiness) for the period 2024–2028.
+- **[Landsverordening Toezicht Bank- en Kredietwezen — plain-language summary]({{ '/assets/pdfs/policies/goal-8/landsverordening-banking-supervision-summary.pdf' | relative_url }})** — English-language summary of the national ordinance governing the supervision of credit institutions, prepared for SDG-reporting purposes by the Central Bureau of Statistics.
 
 ## Methodological references
 
-- **[Indicator 8.10.2 — National methodology note](/assets/pdfs/policies/goal-8/8-10-2-methodology-note.pdf)** — describes how the indicator is calculated for Curaçao, including the data source (Omnibus Social Survey), the weighting procedure, the disaggregation strategy, and known limitations.
+- **[Indicator 8.10.2 — National methodology note]({{ '/assets/pdfs/policies/goal-8/8-10-2-methodology-note.pdf' | relative_url }})** — describes how the indicator is calculated for Curaçao, including the data source (Omnibus Social Survey), the weighting procedure, the disaggregation strategy, and known limitations.
 
 ## Responsible institutions
 
