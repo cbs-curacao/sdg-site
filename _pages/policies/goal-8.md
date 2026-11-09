@@ -6,6 +6,8 @@ layout: page
 toc: true
 ---
 
+[← Back to all policies]({{ '/policies/' | relative_url }})
+
 ## About this page
 
 This page brings together the national policies, legislation, and methodological references that underpin how the Central Bureau of Statistics reports on **Sustainable Development Goal 8 — Decent Work and Economic Growth** for Curaçao. It is intended for analysts, policy makers, and members of the public who want to understand the legal and methodological context behind the indicators displayed elsewhere on this platform.
