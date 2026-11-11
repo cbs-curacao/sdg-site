@@ -212,7 +212,9 @@ metadata_tabs:
 meta_tags: []
 news:
   category_links: false
-observation_attributes: []
+observation_attributes:
+  - field: COMMENT_OBS
+    label: Note
 progress_status:
   status_heading: ''
   status_help: ''
