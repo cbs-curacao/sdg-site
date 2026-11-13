@@ -1,18 +1,14 @@
 # ****************************************************************************
-# NOTES:
+# Production deployment of the SITE.
 #
-# This is an example of a production deployment that uses GitHub Pages along
-# with a second "production" GitHub organisation. If you prefer to implement
-# your own workflow, or do not need production deployments, then you should
-# delete this file.
+# Trigger: push to the "master" branch, a manual run from the Actions tab, or
+# automatically by the sdg-data production workflow after new data is published.
+# Builds the site with the production config and publishes it to:
+#   https://github.com/cbs-curacao-sdg/cbs-curacao-sdg.github.io  (branch main)
+#   -> https://cbs-curacao-sdg.github.io/
 #
-# In order for this to work, you must replace PRODUCTION_ORGANISATION below
-# with the name of your production GitHub organisation, under REPOSITORY_NAME.
-#
-# For example, if your production organisation is "my-stats-org", then use:
-#
-# REPOSITORY_NAME: my-stats-org/my-stats-org.github.io
-#
+# Secret used: PROD_TOKEN - fine-grained token, owner cbs-curacao-sdg,
+#              Contents: read/write
 # ****************************************************************************
 
 name: Deploy to production
@@ -29,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         persist-credentials: false
     - name: Set up Ruby 3.2
@@ -42,11 +38,12 @@ jobs:
         bundle config path vendor/bundle
         bundle install
         JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+        touch _site/.nojekyll
+    - name: Deploy to GitHub Pages (production organisation)
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        REPOSITORY_NAME: PRODUCTION_ORGANISATION/PRODUCTION_ORGANISATION.github.io
-        ACCESS_TOKEN: ${{ secrets.token }}
-        BRANCH: main
-        FOLDER: _site
-        CLEAN: true
+        repository-name: cbs-curacao-sdg/cbs-curacao-sdg.github.io
+        token: ${{ secrets.PROD_TOKEN }}
+        branch: main
+        folder: _site
+        clean: true

@@ -15,8 +15,8 @@
 # See also _config_prod.yml in the root of this repository.
 
 environment: production
-# Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
+# Production data published by cbs-curacao/sdg-data (master branch).
+remote_data_prefix: "https://cbs-curacao-sdg.github.io/sdg-data"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.

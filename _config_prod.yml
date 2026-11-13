@@ -3,5 +3,6 @@
 # NOTE: This "production" version only contains differences from _config.yml.
 #       See also _data/site_config_prod.yml in this repository.
 
+url: "https://cbs-curacao-sdg.github.io"
 baseurl: ""
 environment: production
