@@ -21,3 +21,9 @@ remote_data_prefix: "https://cbs-curacao-sdg.github.io/sdg-data"
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
+
+# No banner on the public site (staging shows a "TEST" banner, see site_config.yml).
+disclaimer:
+  phase: ''
+  message: ''
+  hidden: true

@@ -63,8 +63,8 @@ data_fields:
   series: ''
 date_formats: []
 disclaimer:
-  phase: ''
-  message: ''
+  phase: TEST
+  message: 'This is the test version of the site. The official site is <a href="https://cbs-curacao-sdg.github.io/">cbs-curacao-sdg.github.io</a>.'
   hidden: false
 email_contacts:
   questions: info@cbs.cw
@@ -137,7 +137,10 @@ indicator_tabs:
 languages:
   - en
 languages_public: []
-logos: []
+logos:
+  - language: en
+    src: assets/img/CBS-SDG-logo.png
+    alt: Central Bureau of Statistics Curaçao - Sustainable Development Goals
 map_layers: []
 map_options:
   disaggregation_controls: false
