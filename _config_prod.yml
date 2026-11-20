@@ -6,3 +6,9 @@
 url: "https://cbs-curacao-sdg.github.io"
 baseurl: ""
 environment: production
+
+# GoatCounter analytics (cookieless, so no cookie consent needed).
+# Lives here because only the production build reads _config_prod.yml;
+# the staging build does not, so staging never loads the tracking script.
+# Used in _includes/scripts-custom.html.
+goatcounter_code: cbs-sdg

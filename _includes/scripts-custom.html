@@ -1,0 +1,11 @@
+{% comment %}
+This space intended for custom third-party javascript.
+(Overrides the empty placeholder in the Open SDG theme.)
+
+GoatCounter analytics: only rendered when goatcounter_code is set,
+which is only in _config_prod.yml (production build).
+{% endcomment %}
+{% if site.goatcounter_code %}
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{% endif %}
