@@ -2,7 +2,8 @@
   National priority goals bar for the reporting status page.
   Sums the per-goal reporting data for the goals in site.priority_goals
   (_config.yml) and renders the same markup/classes as the theme's
-  reporting-status-overall.html (without the wheel image).
+  reporting-status-overall.html, with the Curaçao SDG wheel
+  (assets/img/sdg-wheel-cw.png, 200x200 shown at 100x100) in place of the theme wheel.
 {%- endcomment -%}
 {%- assign status_types = site.reporting_status.status_types -%}
 {%- assign indicators_plural = page.t.general.indicators | downcase -%}
@@ -41,6 +42,9 @@
 {%- endfor -%}
 
 <div class="goal goal-overall goal-priority">
+  <div class="frame goal-tiles">
+    <img src="{{ site.baseurl }}/assets/img/sdg-wheel-cw.png" alt="SDG wheel with the flag of Curaçao" width="100" height="100" class="goal-icon-image goal-icon-image-{{ site.goal_image_extension }}"/>
+  </div>
   <div class="details">
     <h2 class="status-goal">National priority goals (SDG {{ site.priority_goals | join: ", " }})</h2>
     <span class="total"><span>{{ p_total }}</span> {{ indicators_plural }}</span>
