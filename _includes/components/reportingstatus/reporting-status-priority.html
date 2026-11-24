@@ -1,0 +1,54 @@
+{%- comment -%}
+  National priority goals bar for the reporting status page.
+  Sums the per-goal reporting data for the goals in site.priority_goals
+  (_config.yml) and renders the same markup/classes as the theme's
+  reporting-status-overall.html (without the wheel image).
+{%- endcomment -%}
+{%- assign status_types = site.reporting_status.status_types -%}
+{%- assign indicators_plural = page.t.general.indicators | downcase -%}
+
+{%- assign p_total = 0 -%}
+{%- for goalreport in include.goals -%}
+  {%- assign gid = goalreport.goal | strip | append: "" -%}
+  {%- if site.priority_goals contains gid -%}
+    {%- assign p_total = p_total | plus: goalreport.totals.total -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if p_total > 0 -%}
+{%- assign statuses_html = "" -%}
+{%- assign bar_html = "" -%}
+{%- for status_type in status_types -%}
+  {%- assign s_count = 0 -%}
+  {%- assign s_found = false -%}
+  {%- for goalreport in include.goals -%}
+    {%- assign gid = goalreport.goal | strip | append: "" -%}
+    {%- if site.priority_goals contains gid -%}
+      {%- assign s = goalreport.statuses | where: "status", status_type.value | first -%}
+      {%- if s -%}
+        {%- assign s_count = s_count | plus: s.count -%}
+        {%- assign s_found = true -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if s_found -%}
+    {%- assign s_pct = s_count | times: 100.0 | divided_by: p_total -%}
+    {%- assign s_class = status_type.value | slugify -%}
+    {%- assign s_label = status_type.label | t -%}
+    {%- capture statuses_html -%}{{ statuses_html }}<div><span class="status {{ s_class }}"><span class="status-inner">{{ s_count }}</span></span><strong>{{ s_label }}</strong><span class="value">{{ s_pct | round }}%</span></div>{%- endcapture -%}
+    {%- capture bar_html -%}{{ bar_html }}<span class="{{ s_class }}" style="width:{{ s_pct }}%" title="{{ s_label }}: {{ s_pct | round }}%"></span>{%- endcapture -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="goal goal-overall goal-priority">
+  <div class="details">
+    <h2 class="status-goal">National priority goals (SDG {{ site.priority_goals | join: ", " }})</h2>
+    <span class="total"><span>{{ p_total }}</span> {{ indicators_plural }}</span>
+    <div class="summary">
+      <div class="statuses">{{ statuses_html }}<br style="clear:both;"></div>
+    </div>
+    <div class="goal-stats">{{ bar_html }}</div>
+  </div>
+  <br style="clear:both;">
+</div>
+{%- endif -%}

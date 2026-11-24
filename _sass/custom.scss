@@ -1,1 +1,21 @@
 // Enter any custom Sass in this file.
+
+// National priority goal label in the goal page banner.
+// In theme 2.3.0 the banner is white with dark text (black with white text in
+// high-contrast mode), so the label inherits the banner text colour and keeps
+// full contrast in both modes and on every goal.
+.goal-banner .priority-goal-label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.75rem;
+  border: 2px solid currentColor;
+  border-radius: 1rem;
+  color: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+// Visually separate the priority bar from the overall bar
+.reportingstatus .goal-priority {
+  margin-top: 1.5rem;
+}
